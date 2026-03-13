@@ -376,8 +376,8 @@ animation:dots 1.5s steps(4,end) infinite;
 
     <div class="grid md:grid-cols-3 gap-6">
         @for ($i = 1; $i <= 8; $i++)
-            <a href="{{ asset("images/comics/$i.png") }}" class="glightbox" data-gallery="comics">
-                <img src="{{ asset("images/comics/$i.png") }}" 
+            <a href="{{ asset("images/Comics/$i.png") }}" class="glightbox" data-gallery="comics">
+                <img src="{{ asset("images/Comics/$i.png") }}" 
                      class="rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 cursor-pointer">
             </a>
         @endfor
