@@ -94,7 +94,7 @@ animation:dots 1.5s steps(4,end) infinite;
         <h1 class="text-6xl font-bold mb-2">
             <span class="text-blue-400">Jonathan Mandawe
         </h1>
-        <p class="text-gray-200 mb-2">Sherlack2310</p>
+        <p class="text-gray-200 mb-2">Sherlack2530</p>
         <p class="text-gray-200">Scroll down to explore my work</p>
     </div>
 </div>
@@ -133,7 +133,7 @@ animation:dots 1.5s steps(4,end) infinite;
     </h1>
 
     <p class="text-lg text-gray-300">
-        Online, I go by <strong>Sherlack2310</strong>. I’m a 2D artist who specializes in cartoon-style character design, with a strong focus on anthropomorphic (furry) characters.
+        Online, I go by <strong>Sherlack2530</strong>. I’m a 2D artist who specializes in cartoon-style character design, with a strong focus on anthropomorphic (furry) characters.
     </p>
 
     <p class="text-gray-400">
@@ -188,12 +188,12 @@ animation:dots 1.5s steps(4,end) infinite;
 
             <div class="flex justify-center gap-3">
                 <span class="text-purple-400">📧</span>
-                <span>your@email.com</span>
+                <span>mandawejonathan@gmail.com</span>
             </div>
 
             <div class="flex justify-center gap-3">
                 <span class="text-purple-400">📱</span>
-                <span>+63 XXX XXX XXXX</span>
+                <span>09216672929</span>
             </div>
 
         </div>
