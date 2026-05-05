@@ -282,6 +282,12 @@ animation:dots 1.5s steps(4,end) infinite;
               <p class="text-gray-400 text-sm">Portrait Artwork</p>
           </button>
 
+          
+          <button @click="section = 'storyboard'" class="bg-neutral-900 border border-white/10 p-8 rounded-xl hover:border-purple-400 transition">
+              <h3 class="text-xl font-semibold mb-2">Storyboard</h3>
+              <p class="text-gray-400 text-sm">Storyboard Artwork</p>
+          </button>
+
           <button @click="section = 'landscape'" class="bg-neutral-900 border border-white/10 p-8 rounded-xl hover:border-purple-400 transition">
               <h3 class="text-xl font-semibold mb-2">Landscape Artwork</h3>
               <p class="text-gray-400 text-sm">Landscape Artwork</p>
@@ -347,7 +353,7 @@ animation:dots 1.5s steps(4,end) infinite;
     <h2 class="text-4xl font-bold mb-8 text-center">Landscape Artwork</h2>
 
     <div class="grid md:grid-cols-3 gap-6">
-        @for ($i = 1; $i <= 3; $i++)
+        @for ($i = 1; $i <= 11; $i++)
             <a href="{{ asset("images/landscape/$i.png") }}" class="glightbox" data-gallery="landscape">
                 <img src="{{ asset("images/landscape/$i.png") }}" 
                      class="rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 cursor-pointer">
@@ -376,8 +382,8 @@ animation:dots 1.5s steps(4,end) infinite;
 
     <div class="grid md:grid-cols-3 gap-6">
         @for ($i = 1; $i <= 8; $i++)
-            <a href="{{ asset("images/Comics/$i.png") }}" class="glightbox" data-gallery="comics">
-                <img src="{{ asset("images/Comics/$i.png") }}" 
+            <a href="{{ asset("images/comics/$i.png") }}" class="glightbox" data-gallery="comics">
+                <img src="{{ asset("images/comics/$i.png") }}" 
                      class="rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 cursor-pointer">
             </a>
         @endfor
@@ -390,12 +396,32 @@ animation:dots 1.5s steps(4,end) infinite;
 
 
 
+
+  <!-- COMICS GALLERY -->
+<div x-show="section === 'storyboard'" x-transition x-cloak>
+    <h2 class="text-4xl font-bold mb-8 text-center">Storyboards</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+        @for ($i = 1; $i <= 5; $i++)
+            <a href="{{ asset("images/storyboard/$i.png") }}" class="glightbox" data-gallery="storyboard">
+                <img src="{{ asset("images/storyboard/$i.png") }}" 
+                     class="rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 cursor-pointer">
+            </a>
+        @endfor
+    </div>
+
+    <button @click="section = 'menu'" class="mt-10 bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+        ← Back
+    </button>
+</div>
+
+
   <!-- FANART GALLERY -->
 <div x-show="section === 'fanart'" x-transition x-cloak>
     <h2 class="text-4xl font-bold mb-8 text-center">Fanart</h2>
 
     <div class="grid md:grid-cols-3 gap-6">
-        @for ($i = 1; $i <= 24; $i++)
+        @for ($i = 1; $i <= 29; $i++)
             <a href="{{ asset("images/fanart/$i.png") }}" class="glightbox" data-gallery="fanart">
                 <img src="{{ asset("images/fanart/$i.png") }}" 
                      class="rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 cursor-pointer">
@@ -439,7 +465,7 @@ animation:dots 1.5s steps(4,end) infinite;
     <h2 class="text-4xl font-bold mb-8 text-center">Concept Design</h2>
 
     <div class="grid md:grid-cols-3 gap-6">
-        @for ($i = 1; $i <= 18; $i++)
+        @for ($i = 1; $i <= 23; $i++)
             <a href="{{ asset("images/concept/$i.png") }}" class="glightbox" data-gallery="concept">
                 <img src="{{ asset("images/concept/$i.png") }}" 
                      class="rounded-xl hover:scale-105 hover:shadow-2xl transition duration-500 cursor-pointer">
